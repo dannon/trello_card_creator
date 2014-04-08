@@ -22,12 +22,8 @@ Valid Values: a string with a length from 1 to 16384
 import bottle
 import json
 import os
-import sys
 import urllib
 import urllib2
-
-# HACK HACK HACK -- put flup on path.
-sys.path.append('/afs/.galaxyproject.org/service/web/sites/galaxyproject.org/cgi-bin/flup-1.0-py2.5.egg')
 
 trello_url = "https://api.trello.com/1/cards"
 
