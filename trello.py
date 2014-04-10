@@ -25,8 +25,6 @@ import os
 import urllib
 import urllib2
 
-app = application = bottle.Bottle()
-
 trello_url = "https://api.trello.com/1/cards"
 
 trello_auth_key = os.environ.get('TRELLO_AUTH_KEY')
@@ -120,3 +118,5 @@ def _create_card(name, desc, submitter):
 
 if __name__ == "__main__":
     bottle.run(host='0.0.0.0', port=8089, reloader=True)
+else:
+    application = bottle.default_app()
