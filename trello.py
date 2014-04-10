@@ -82,6 +82,9 @@ issue, simply fill out the form below and a card will be created in the "Develop
 </div> </div></body></html>
 '''
 
+@bottle.route('/static/<path:path>')
+def callback(path):
+        return bottle.static_file(path, root='static/')
 
 @bottle.get('/')
 def create_form():
