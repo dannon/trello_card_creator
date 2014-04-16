@@ -6,9 +6,16 @@ html {
 
 body {
     margin: 0;
-    font-family: Verdana, sans-serif;
+    font-family: "Lucida Grande", Verdana, sans-serif;
     color: #2C3143;
-    /* background-color: #C9D0E8; */
+}
+
+#form_container{
+    max-width:45%;
+}
+#response_container{
+    max-width:45%;
+    float:right;
 }
 
 #content {
@@ -16,13 +23,25 @@ body {
     margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 60em;
+    max-width: 1050px;
     background-color: white;
     min-height: 100%;
 }
 
 a {
     color: inherit;
+}
+
+label {
+    font-weight: bold;
+    margin-top:10px;
+}
+
+
+input, textarea{
+    padding: 2px;
+    margin: 5px 0 15px 0;
+    width: 100%;
 }
 
 #masthead {
@@ -76,40 +95,20 @@ a {
     color: black;
 }
 
+#interaction_container{
+    clear:both;
+}
+
+.fi_right{
+    margin: 0 30px 30px 30px;
+    float:right;
+}
+
 #subtag {
     font-size: 110%;
-    color: #777;   
+    color: #777;
     width: 40em;
     margin: 2em auto;
-}
-
-#big_links {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1em 0;
-}
-
-#big_links_titles {
-    font-size: 150%;
-    font-weight: normal;
-    font-family: 'Hoefler Text', Georgia, serif;
-    color: #023858;
-}
-
-#big_links_titles a {
-    color: black;
-    text-decoration: none;
-}
-
-#big_links_images img {
-    padding-top: 1em;
-    border-style: none;
-}
-
-#big_links_small_text td {
-    padding: 1em 2em 2em 2em;
-    font-size: 80%;
 }
 
 #opening_text {
@@ -117,26 +116,5 @@ a {
     padding-bottom: 3em;
     padding-right: 3%;
     font-size:110%;
-}
-
-#opening_text ul li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    background-image: url("arrow-right.png");
-    background-repeat: no-repeat;
-    background-position: left center;
-    padding-left: 40px;
-}
-
-#detailed_text {
-    margin-right: auto;
-    margin-left: auto;
-    width: 40em;
-}
-
-#acks {
-    color: #777;
-    margin-top: 5em;
-    font-size: 80%;
+    width:800px;
 }
